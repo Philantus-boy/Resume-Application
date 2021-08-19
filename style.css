@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Vollkorn", serif;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  outline: none;
+}
+
+html {
+  font-size: 40.5%;
+}
+/* a way of allocating clours to variables */
+:root {
+  --primary-color: #2b81e4;
+  --secondary-color: #eee;
+  --white-color: #fff;
+  --grey-color: #555;
+  --light-grey-color: #777;
+  --black-color: #000;
+  --green-color: rgb(66, 238, 51);
+}
+/* we use flex box to manage the layout */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+/* var stands for variable for the saved variables */
+  background-color: var(--secondary-color);
+  margin: 3.5rem;
+  box-shadow: 0 1rem 3rem var(--grey-color);
+  overflow: hidden;
+}
+
+/* Header */
+  .header {
+    width: 100%;
+    /* we used the calc function to create the same space
+    at the start and end of the header */
+    /* 100vh(100 view per height == 100% of viewport) and 7rem is the sum of the
+    space in the top and bottom ie. 3.5 + 3.5 margin*/
+  }
+  
+  .header-text {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-top: 30px;
+    text-shadow: 0 0.3rem 0.5rem var(--grey-color);
+  }
+  
+  .heading {
+    font-size: 4rem;
+    color: var(--black-color);
+  }
+
+  .header-para {
+    background-color: var(--green-color);
+    border: var(--black-color);
+  }
+  
+  .header-paragraph {
+    font-size: 3rem;
+    font-weight: 500;
+    color: var(--white-color);
+    max-width: 100rem;
+    margin-top: 40px;
+  }
+
+  .logo {
+    /* the logo should be placed at the top right side of the screen
+    so we use absolute and position of the header relative cos
+    we need to define the position of the logo according
+    to its parent element */
+        position: absolute;
+        top: 4rem;
+        right: 4rem;
+      }
+      /* in order to display the logo horizontally we use flex */
+      .logo .logo {
+        display: flex;
+      }
+      
+      .obj-contact {
+        /* for padding specify top,right, bottom, left */
+            padding: 5rem 0 10rem 0;
+          }
+
+      .cards-wrapper {
+        display: flex;
+        justify-content: space-evenly;
+      }
+      
+      .card {
+        width: 60rem;
+        position: relative;
+        perspective: 500rem;
+      }
+
+      .card-title {
+        text-align: center;
+        width: 80%;
+        margin: auto;
+      }
+      f
+      .Career-obj {
+    /* the line below each list is caused by the border-bottom
+    attribute that is specified*/
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 500;
+        color: var(--light-grey-color);
+        margin: 2rem 0;
+        border-bottom: 0.1rem solid var(--primary-color);
+        padding-bottom: 1rem;
+      }
+
+      .objective-para{
+        font-size: 2rem;
+        font-weight: 300;
+        color: var(--black-color);
+        /* margin: 2rem 0; */
+        padding-bottom: 1rem;
+      }
+  
+      .obj-text{
+        width: 80%;
+        margin: auto;
+      }
+
+      .con-list-item{
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 300;
+        color: var(--black-color);
+        /* margin: 2rem 0; */
+        padding-bottom: 1.5rem;
+      }
+
+      .card-2-title {
+        /* the line below each list is caused by the border-bottom
+        attribute that is specified*/
+        width: 50rem; 
+        margin-left: 10rem;   
+        background: var(--green-color);
+        text-align: center;
+          }
+
+      .card-2-title h1 {
+      text-align: center;
+      color: var(--white-color);
+      font-size: 3rem;
+      font-weight: 500;
+      margin: 2rem 0;
+      padding-bottom: 1rem;
+    }
+
+    .card-2 {
+      width: 70rem;
+      position: relative;
+      perspective: 500rem;
+      margin-left: 20px;
+    }
+
+    .con-3-list-item{
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 300;
+      color: var(--black-color);
+      margin: 2rem 0;
+      padding-bottom: 1.5rem;
+    }
+
+    .card-3-title h1 {
+      text-align: center;
+      color: var(--white-color);
+      font-size: 3rem;
+      font-weight: 500;
+      margin: 2rem 0;
+      padding-bottom: 1rem;
+    }
+
+    .card-3-title {
+      /* the line below each list is caused by the border-bottom
+      attribute that is specified*/
+      width: 50rem; 
+      margin-left: 10rem;   
+      background: var(--black-color);
+      text-align: center;
+      }
+
+      .card-3 {
+        width: 70rem;
+        position: relative;
+        perspective: 500rem;
+        margin-left: 20px;
+
+      }
+
+      .con-4-list-item{
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 300;
+        color: var(--black-color);
+        margin: 2rem 0;
+        padding-bottom: 1.5rem;
+      }
+
+      .con-5-list-item{
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 300;
+        color: var(--black-color);
+        margin: 2rem 0;
+        padding-bottom: 1.5rem;
+      }
+
+      .card-4-title h1 {
+        text-align: center;
+        color: var(--white-color);
+        font-size: 3rem;
+        font-weight: 500;
+        margin: 2rem 0;
+        padding-bottom: 1rem;
+      }
+
+      .card-4-title {
+        /* the line below each list is caused by the border-bottom
+        attribute that is specified*/
+        width: 50rem; 
+        margin-left: 10rem;   
+        background: var(--green-color);
+        text-align: center;
+        }
+
+        .card-4 {
+          width: 70rem;
+          position: relative;
+          perspective: 500rem;
+          margin-left: 20px;
+  
+        }
